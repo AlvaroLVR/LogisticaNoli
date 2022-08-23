@@ -1,0 +1,49 @@
+/* header */
+/* header main */
+.header-main {
+  display: flex;
+  flex-direction: column;
+  background-color: #9a0c0c;
+  margin: 0 auto; }
+  .header-main .header-info {
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black; }
+    .header-main .header-info .info-left {
+      display: flex;
+      margin-left: 1rem; }
+    .header-main .header-info .info-rigth {
+      display: flex;
+      margin-right: 1rem; }
+  .header-main .header-nav {
+    background-color: white; }
+
+@media (max-width: 500px) {
+  .header-main .header-info {
+    height: 1.8rem !important;
+    display: flex;
+    justify-content: center !important;
+    border-bottom: 1px solid black; }
+    .header-main .header-info .info-left {
+      display: none !important; }
+    .header-main .header-info .info-rigth {
+      display: flex; }
+      .header-main .header-info .info-rigth a {
+        margin-left: 1rem;
+        margin-right: 1rem; }
+  .header-main .header-logo {
+    margin-left: 1rem; }
+  .header-main .header-boton {
+    margin-right: 1rem; }
+  .header-main .header-items {
+    text-align: center; }
+  .carrousel {
+    position: relative; }
+    .carrousel .img-carrousel {
+      height: 30vh;
+      object-fit: fill; }
+  .carrousel-boton {
+    position: absolute;
+    bottom: 10px;
+    left: 40%; } }
