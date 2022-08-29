@@ -1,0 +1,34 @@
+@media  (max-width: 500px){
+    main{
+        .contacto{
+            .main-contacto{
+                align-items: center;
+                .contacto-texto{
+                    width: 70vw;
+                }
+                .contacto-svg{
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+        }
+        .flota{
+            .flota-card{
+                align-items: center;
+                .flota-svg{
+                    height: 90px ;
+                    width: 90px ;
+                }
+            }
+        }
+        .carga{
+            .carga-card{
+                align-items: center;
+                .carga-svg{
+                    height: 80px;
+                    width: 80px;
+                }
+            }
+        }
+    }
+}
