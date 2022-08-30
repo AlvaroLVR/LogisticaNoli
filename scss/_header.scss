@@ -2,7 +2,6 @@
 .header-main{
     display: flex;
     flex-direction: column;
-    background-color: rgb(154, 12, 12);
     margin: 0 auto;
     .header-info{
         height: 5vh;
@@ -26,7 +25,7 @@
 @media (max-width: 500px) {
     .header-main{
         .header-info{
-            height: 1.8rem !important;
+            height: auto;
             display: flex;
             justify-content: center !important;
             border-bottom: 1px solid black ;
@@ -39,16 +38,24 @@
                     margin-left: 1rem;
                     margin-right: 1rem;
                 }
+                .header-logo-info{
+                    margin: .3rem 0;
+                    height: 30px;
+                    width: 30px;
+                }
             }
         }
-        .header-logo{
-            margin-left: 1rem;
-        }
+        
         .header-boton{
             margin-right: 1rem;
         }
         .header-items{
             text-align: center;
+        }
+        #logo-mobile{
+            height: 50px;
+            width: 50px;
+            margin-left:1.5rem ;
         }
 
     }

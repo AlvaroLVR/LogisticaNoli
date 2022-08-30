@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logistica Noli</title> 
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!-- css -->
     <link rel="stylesheet" href="./scss/style.css">
     <link rel="shortcut icon" href="./img/truck-svgrepo-com (1).svg" type="image/x-icon">
@@ -15,7 +15,7 @@
     <!-- header -->
     <div class="header-main">
         <!-- barra info -->
-        <div class="header-info d-flex flex-row justify-content-between">
+        <div class="header-info d-flex flex-row justify-content-between bg-primary">
             <!-- datos contacto -->
             <div class="info-left">
                 <p class="fw-lighter me-3">Email: Logisticanoli@gmail.com</p>
@@ -23,16 +23,46 @@
             </div>
             <!-- redes sociales -->
             <div class="info-rigth">
-                <a href="#">#</a>
-                <a href="#">#</a>
-                <a href="#">#</a>
-                <a href="#">#</a>                
+                <a href="#" class="text-dark">
+                    <svg class="header-logo-info" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-dark">
+                    <svg class="header-logo-info" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-dark">
+                    <svg class="header-logo-info" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M224 122.8c-72.7 0-131.8 59.1-131.9 131.8 0 24.9 7 49.2 20.2 70.1l3.1 5-13.3 48.6 49.9-13.1 4.8 2.9c20.2 12 43.4 18.4 67.1 18.4h.1c72.6 0 133.3-59.1 133.3-131.8 0-35.2-15.2-68.3-40.1-93.2-25-25-58-38.7-93.2-38.7zm77.5 188.4c-3.3 9.3-19.1 17.7-26.7 18.8-12.6 1.9-22.4.9-47.5-9.9-39.7-17.2-65.7-57.2-67.7-59.8-2-2.6-16.2-21.5-16.2-41s10.2-29.1 13.9-33.1c3.6-4 7.9-5 10.6-5 2.6 0 5.3 0 7.6.1 2.4.1 5.7-.9 8.9 6.8 3.3 7.9 11.2 27.4 12.2 29.4s1.7 4.3.3 6.9c-7.6 15.2-15.7 14.6-11.6 21.6 15.3 26.3 30.6 35.4 53.9 47.1 4 2 6.3 1.7 8.6-1 2.3-2.6 9.9-11.6 12.5-15.5 2.6-4 5.3-3.3 8.9-2 3.6 1.3 23.1 10.9 27.1 12.9s6.6 3 7.6 4.6c.9 1.9.9 9.9-2.4 19.1zM400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM223.9 413.2c-26.6 0-52.7-6.7-75.8-19.3L64 416l22.5-82.2c-13.9-24-21.2-51.3-21.2-79.3C65.4 167.1 136.5 96 223.9 96c42.4 0 82.2 16.5 112.2 46.5 29.9 30 47.9 69.8 47.9 112.2 0 87.4-72.7 158.5-160.1 158.5z"/>
+                    </svg>
+                </a>
             </div>
         </div>
         <!-- barra navegacion -->
         <nav class="header-nav navbar navbar-expand-lg d-flex justify-content-between">
             <!-- logo -->
-            <a class="header-logo navbar-brand" href="#"><img src="#" alt="logo"></a>
+            <a class="header-logo navbar-brand logo-mobile" href="#"> 
+                <svg version="1.1" id="logo-mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 488.326 488.326" style="enable-background:new 0 0 488.326 488.326;" xml:space="preserve">
+                
+                <path d="M473.6,279.713v-42.9c0-15.8-13-29.3-29.3-29.3l-38.9-3.4l-34.4-51.9c-0.6-0.6-0.6-1.1-1.1-1.7
+                c-5.1-7.3-14.1-12.4-23.7-12.4h-73.3H133.6c-14.7,0-27.1,11.3-28.8,25.4h-93c-6.2,0-11.8,5.1-11.8,11.8c0,6.2,5.1,11.8,11.8,11.8
+                h106.6c0.6,0,1.1,0,1.7,0c5.6,0.6,10.1,5.6,10.1,11.3c0,6.2-5.1,11.8-11.8,11.8h-14.1H40c-6.2,0-11.8,5.1-11.8,11.8
+                c0,6.2,5.1,11.8,11.8,11.8h64.3h52.4c6.2,0,11.8,5.1,11.8,11.8c0,6.2-5.1,11.8-11.8,11.8h-52.4H73.8c-6.2,0-11.8,5.1-11.8,11.8
+                c0,6.2,5.1,11.8,11.8,11.8h30.4c-7.3,1.7-12.4,8.5-12.4,16.4v21.4c0,9,7.3,16.9,16.9,16.9h23.7c5.1,18.6,22.6,32.7,42.9,32.7
+                s37.8-13.2,42.8-32.3h54.1h92.5c5.1,18.6,22.6,32.7,42.9,32.7s37.8-13.5,42.9-32.7h20.9c9,0,16.9-7.3,16.9-16.9v-21.4
+                C488.8,287.613,482,280.213,473.6,279.713z M175.3,344.013c-12.4,0-22.6-10.1-22.6-22.6s10.1-22.6,22.6-22.6
+                c12.4,0,22.6,10.1,22.6,22.6S187.7,344.013,175.3,344.013z M408.2,344.013c-12.4,0-22.6-10.1-22.6-22.6s10.1-22.6,22.6-22.6
+                c12.4,0,22.6,10.1,22.6,22.6S420.6,344.013,408.2,344.013z"/>
+                <path d="M210,422.013l-52.7-30.4c-2.7-1.6-6.2,0.4-6.2,3.6v16.7H73.3c-21.1,0-38.2-17.1-38.2-38.2v-40.1H7.6v40.1
+                c0,36.2,29.5,65.7,65.7,65.7h77.9v16.7c0,3.2,3.4,5.2,6.2,3.6l52.7-30.4C212.8,427.613,212.8,423.613,210,422.013z"/>
+                <path d="M251.1,66.213l52.7,30.4c2.7,1.6,6.2-0.4,6.2-3.6v-16.6h77.9c21.1,0,38.2,17.1,38.2,38.2v40.1h27.5v-40.1
+                c0-36.2-29.5-65.7-65.7-65.7H310v-16.7c0-3.2-3.4-5.2-6.2-3.6l-52.7,30.4C248.4,60.613,248.4,64.613,251.1,66.213z"/>
+                
+                </svg>
+            </a>
             <!-- boton celular -->
             <button class=" header-boton navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -63,6 +93,7 @@
     </div>
     <!-- main -->
     <main>
+        <!-- carrousel -->
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner carrousel "  >
               <div class="carousel-item active" >
@@ -74,7 +105,7 @@
               <div class="carousel-item" style="height: 30vh;">
                 <img src="./img/carrousel3.jfif" class="d-block w-100 img-carrousel" alt="logistica">
               </div>
-              <button class="btn btn-danger carrousel-boton">Contacto</button>
+              <button class="btn btn-primary carrousel-boton">Contacto</button>
             </div>
         </div>
         <!--contacto-->
@@ -175,7 +206,7 @@
             <h2 class="text-center">Carga</h2>
             <!--frio-->
             <div class="carga-card  d-flex flex-row justify-content-between align-middle m-4 rounded-2 shadow p-2  "> 
-                <svg class="carga-svg" version="1.1" id="Uploaded to svgrepo.com" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve"><path class="linesandangles_een" d="M28.099,19.043l-3.297,0.883l-1.873-1.082l0.002-5.692l1.872-1.081l3.297,0.883l0.518-1.932
+                <svg class="carga-svg"  version="1.1" id="Uploaded to svgrepo.com" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve"><path fill="#00aaf7" d="M28.099,19.043l-3.297,0.883l-1.873-1.082l0.002-5.692l1.872-1.081l3.297,0.883l0.518-1.932
                     l-2.732-0.732l0.732-2.732l-1.932-0.518l-0.883,3.297l-1.873,1.082L17,8.576V6.414L19.414,4L18,2.586l-2,2l-2-2L12.586,4L15,6.414
                     v2.162l-4.928,2.846l-1.873-1.082L7.315,7.043L5.383,7.561l0.732,2.732l-2.732,0.732l0.518,1.932l3.297-0.883l1.874,1.082v5.69
                     l-1.874,1.082l-3.297-0.883l-0.518,1.932l2.732,0.732l-0.732,2.732l1.932,0.518l0.883-3.297l1.873-1.082L15,23.424v2.162L12.586,28
@@ -190,22 +221,19 @@
             <!-- alto -->
             <div class="carga-card  d-flex flex-row justify-content-between align-middle m-4 rounded-2 shadow p-2  ">
                 <svg class="carga-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13.2197 6.78115C12.9534 6.51488 12.9292 6.09822 13.1471 5.80461L13.2197 5.72049L15.5871 3.35039C15.7128 3.14201 15.9629 3 16.2509 3C16.503 3 16.726 3.10886 16.862 3.27578L16.9148 3.35073L19.282 5.72049L19.3546 5.80461C19.5482 6.0656 19.5506 6.42381 19.3618 6.6872L19.282 6.78115L19.1979 6.85377C18.9369 7.04742 18.5787 7.04981 18.3153 6.86094L18.2213 6.78115L17 5.56V9.34383L16.9931 9.43288C16.9434 9.75319 16.6296 10 16.2499 10C15.8702 10 15.5565 9.75305 15.5068 9.43272L15.5 9.34367V5.56L14.2803 6.78115L14.1962 6.85377C13.9026 7.07162 13.4859 7.04742 13.2197 6.78115Z" fill="#212121"/>
-                    <path d="M13.2226 17.2188C13.4889 16.9526 13.9055 16.9284 14.1991 17.1462L14.2832 17.2188L15.5029 18.44V14.6563C15.5029 14.2939 15.8386 14 16.2528 14C16.6325 14 16.9464 14.2468 16.9961 14.5671L17.0029 14.6562V18.44L18.2242 17.2188C18.4905 16.9526 18.9072 16.9284 19.2008 17.1462L19.2849 17.2188C19.5512 17.4851 19.5754 17.9018 19.3575 18.1954L19.2849 18.2795L16.9177 20.6493C16.7921 20.8578 16.5419 21 16.2538 21C15.9658 21 15.7157 20.858 15.59 20.6496L13.2226 18.2795C12.9297 17.9866 12.9297 17.5117 13.2226 17.2188Z" fill="#212121"/>
-                    <path d="M6.25 3.99219C5.00736 3.99219 4 4.99955 4 6.24219V17.7422C4 18.9848 5.00736 19.9922 6.25 19.9922H10.25C10.6642 19.9922 11 19.6564 11 19.2422C11 18.828 10.6642 18.4922 10.25 18.4922H6.25C5.83579 18.4922 5.5 18.1564 5.5 17.7422V6.24219C5.5 5.82797 5.83579 5.49219 6.25 5.49219H10.25C10.6642 5.49219 11 5.1564 11 4.74219C11 4.32797 10.6642 3.99219 10.25 3.99219H6.25Z" fill="#212121"/>
+                    <path fill="#910024" d="M13.2197 6.78115C12.9534 6.51488 12.9292 6.09822 13.1471 5.80461L13.2197 5.72049L15.5871 3.35039C15.7128 3.14201 15.9629 3 16.2509 3C16.503 3 16.726 3.10886 16.862 3.27578L16.9148 3.35073L19.282 5.72049L19.3546 5.80461C19.5482 6.0656 19.5506 6.42381 19.3618 6.6872L19.282 6.78115L19.1979 6.85377C18.9369 7.04742 18.5787 7.04981 18.3153 6.86094L18.2213 6.78115L17 5.56V9.34383L16.9931 9.43288C16.9434 9.75319 16.6296 10 16.2499 10C15.8702 10 15.5565 9.75305 15.5068 9.43272L15.5 9.34367V5.56L14.2803 6.78115L14.1962 6.85377C13.9026 7.07162 13.4859 7.04742 13.2197 6.78115Z" fill="#212121"/>
+                    <path fill="#910024" d="M13.2226 17.2188C13.4889 16.9526 13.9055 16.9284 14.1991 17.1462L14.2832 17.2188L15.5029 18.44V14.6563C15.5029 14.2939 15.8386 14 16.2528 14C16.6325 14 16.9464 14.2468 16.9961 14.5671L17.0029 14.6562V18.44L18.2242 17.2188C18.4905 16.9526 18.9072 16.9284 19.2008 17.1462L19.2849 17.2188C19.5512 17.4851 19.5754 17.9018 19.3575 18.1954L19.2849 18.2795L16.9177 20.6493C16.7921 20.8578 16.5419 21 16.2538 21C15.9658 21 15.7157 20.858 15.59 20.6496L13.2226 18.2795C12.9297 17.9866 12.9297 17.5117 13.2226 17.2188Z" fill="#212121"/>
+                    <path fill="#910024" d="M6.25 3.99219C5.00736 3.99219 4 4.99955 4 6.24219V17.7422C4 18.9848 5.00736 19.9922 6.25 19.9922H10.25C10.6642 19.9922 11 19.6564 11 19.2422C11 18.828 10.6642 18.4922 10.25 18.4922H6.25C5.83579 18.4922 5.5 18.1564 5.5 17.7422V6.24219C5.5 5.82797 5.83579 5.49219 6.25 5.49219H10.25C10.6642 5.49219 11 5.1564 11 4.74219C11 4.32797 10.6642 3.99219 10.25 3.99219H6.25Z" fill="#212121"/>
                     </svg>
-                    
-                    
-                    
-            
+ 
                     <p class="text-black">Datos  carga</p>
                 </div>
             <!-- ancho -->
             <div class="carga-card  d-flex flex-row justify-content-between align-middle m-4 rounded-2 shadow p-2  ">
                 <svg class="carga-svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20 6.24219C20 4.99955 18.9926 3.99219 17.75 3.99219H6.25C5.00736 3.99219 4 4.99955 4 6.24219V10.2422C4 10.6564 4.33579 10.9922 4.75 10.9922C5.16421 10.9922 5.5 10.6564 5.5 10.2422V6.24219C5.5 5.82797 5.83579 5.49219 6.25 5.49219H17.75C18.1642 5.49219 18.5 5.82797 18.5 6.24219V10.2422C18.5 10.6564 18.8358 10.9922 19.25 10.9922C19.6642 10.9922 20 10.6564 20 10.2422V6.24219Z" fill="#212121"/>
-                    <path d="M17.2188 13.2197C17.4851 12.9534 17.9018 12.9292 18.1954 13.1471L18.2795 13.2197L20.6496 15.5871C20.858 15.7128 21 15.9629 21 16.2509C21 16.503 20.8911 16.726 20.7242 16.862L20.6493 16.9148L18.2795 19.282L18.1954 19.3546C17.9344 19.5482 17.5762 19.5506 17.3128 19.3618L17.2188 19.282L17.1462 19.1979C16.9526 18.9369 16.9502 18.5787 17.1391 18.3153L17.2188 18.2213L18.44 17H14.6562L14.5671 16.9931C14.2468 16.9434 14 16.6296 14 16.2499C14 15.8702 14.247 15.5565 14.5673 15.5068L14.6563 15.5H18.44L17.2188 14.2803L17.1462 14.1962C16.9284 13.9026 16.9526 13.4859 17.2188 13.2197Z" fill="#212121"/>
-                    <path d="M6.78115 13.2226C7.04742 13.4889 7.07162 13.9055 6.85377 14.1991L6.78115 14.2832L5.56 15.5029H9.34367C9.7061 15.5029 10 15.8386 10 16.2528C10 16.6325 9.75319 16.9464 9.43288 16.9961L9.34383 17.0029H5.56L6.78115 18.2242C7.04742 18.4905 7.07162 18.9072 6.85377 19.2008L6.78115 19.2849C6.51488 19.5512 6.09822 19.5754 5.80461 19.3575L5.72049 19.2849L3.35072 16.9177C3.14219 16.7921 3 16.5419 3 16.2538C3 15.9658 3.14201 15.7157 3.35039 15.59L5.72049 13.2226C6.01338 12.9297 6.48826 12.9297 6.78115 13.2226Z" fill="#212121"/>
+                    <path fill="#910024" d="M20 6.24219C20 4.99955 18.9926 3.99219 17.75 3.99219H6.25C5.00736 3.99219 4 4.99955 4 6.24219V10.2422C4 10.6564 4.33579 10.9922 4.75 10.9922C5.16421 10.9922 5.5 10.6564 5.5 10.2422V6.24219C5.5 5.82797 5.83579 5.49219 6.25 5.49219H17.75C18.1642 5.49219 18.5 5.82797 18.5 6.24219V10.2422C18.5 10.6564 18.8358 10.9922 19.25 10.9922C19.6642 10.9922 20 10.6564 20 10.2422V6.24219Z" fill="#212121"/>
+                    <path fill="#910024" d="M17.2188 13.2197C17.4851 12.9534 17.9018 12.9292 18.1954 13.1471L18.2795 13.2197L20.6496 15.5871C20.858 15.7128 21 15.9629 21 16.2509C21 16.503 20.8911 16.726 20.7242 16.862L20.6493 16.9148L18.2795 19.282L18.1954 19.3546C17.9344 19.5482 17.5762 19.5506 17.3128 19.3618L17.2188 19.282L17.1462 19.1979C16.9526 18.9369 16.9502 18.5787 17.1391 18.3153L17.2188 18.2213L18.44 17H14.6562L14.5671 16.9931C14.2468 16.9434 14 16.6296 14 16.2499C14 15.8702 14.247 15.5565 14.5673 15.5068L14.6563 15.5H18.44L17.2188 14.2803L17.1462 14.1962C16.9284 13.9026 16.9526 13.4859 17.2188 13.2197Z" fill="#212121"/>
+                    <path fill="#910024" d="M6.78115 13.2226C7.04742 13.4889 7.07162 13.9055 6.85377 14.1991L6.78115 14.2832L5.56 15.5029H9.34367C9.7061 15.5029 10 15.8386 10 16.2528C10 16.6325 9.75319 16.9464 9.43288 16.9961L9.34383 17.0029H5.56L6.78115 18.2242C7.04742 18.4905 7.07162 18.9072 6.85377 19.2008L6.78115 19.2849C6.51488 19.5512 6.09822 19.5754 5.80461 19.3575L5.72049 19.2849L3.35072 16.9177C3.14219 16.7921 3 16.5419 3 16.2538C3 15.9658 3.14201 15.7157 3.35039 15.59L5.72049 13.2226C6.01338 12.9297 6.48826 12.9297 6.78115 13.2226Z" fill="#212121"/>
                     </svg>
                     
             
@@ -222,9 +250,125 @@
                 <p class="text-black">Datos  carga</p>
             </div>
         </div>
+        <!--formulario-->
+        <div class="formulario py-4">
+            <div class="rounded-2 bg-light p-4 m-4">
+                <h2 class="text-center">Formulario</h2>
+                <form>
+                    <div class="row mb-3 ">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="inputEmail3">
+                        </div>
+                    </div>
+                    <div class="row mb-3 ">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Nombre</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                    </div>
+                    <div class="row mb-3 ">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Apellido</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                    </div>
+                    <div class="row mb-3 ">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Numero de contacto</label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control" id="number">
+                        </div>
+                    </div>
+                    <div class="row mb-3 ">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Ciudad</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                    </div>
+                    <p class="text-muted text-center">Dimensiones</p>
+                    <div class="row mb-3 ">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Peso</label>
+                        <p class="text-muted">Kilogramos</p>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control" id="name">
+                        </div>
+                    </div>
+                    <div class="row mb-3 ">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Altura</label>
+                        <p class="text-muted">Metros</p>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control" id="name">
+                        </div>
+                    </div>
+                    <div class="row mb-3 ">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Ancho</label>
+                        <p class="text-muted">Metros</p>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control" id="name">
+                        </div>
+                    </div>
+                    <div class="row mb-3 ">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Longitud</label>
+                        <p class="text-muted">Metros</p>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control" id="name">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary text-center">Enviar</button>
+                </form>
+            </div>
+        </div>
     </main>
-
+    <!-- footer -->
+    <footer>
+        <nav class="navbar sticky-bottom bg-primary footer ">
+            <div class="container-fluid footer-lista">
+                <h3>Contacto</h3>
+                <ul class="footer-ul">
+                    <li class="fs-4 "><a class="text-decoration-none text-black" href="#">+54 (9) 11 0000 0000</a></li>
+                    <li class="fs-4 "><a class="text-decoration-none text-black" href="#">Av. Rivadavia 247</a></li>
+                </ul>
+                <h3>Navegacion</h3>
+                <ul class="footer-ul">
+                    <li class="fs-4 "><a class="text-decoration-none text-black" href="#">Inicio</a></li>
+                    <li class="fs-4 "><a class="text-decoration-none text-black" href="#">Carga</a></li>
+                    <li class="fs-4 "><a class="text-decoration-none text-black" href="#">Flota</a></li>
+                    <li class="fs-4 "><a class="text-decoration-none text-black" href="#">Formulario</a></li>
+                </ul>
+            </div>
+            <!--logo-->
+            <div class="footer-logo ">
+                <img src="./img/truck-svgrepo-com (1).svg" alt="logo">
+                <h2 class="ms-2">Transporte Noli</h2>
+            </div>
+            <!-- redes sociales -->
+            <div class="footer-redes ">
+                <h3>Redes Sociales</h3>
+                <div class="footer-lista-redes">
+                    <a href="#" class="text-dark">
+                        <svg class="footer-logo-info" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-dark">
+                        <svg class="footer-logo-info" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-dark">
+                        <svg class="footer-logo-info" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path d="M224 122.8c-72.7 0-131.8 59.1-131.9 131.8 0 24.9 7 49.2 20.2 70.1l3.1 5-13.3 48.6 49.9-13.1 4.8 2.9c20.2 12 43.4 18.4 67.1 18.4h.1c72.6 0 133.3-59.1 133.3-131.8 0-35.2-15.2-68.3-40.1-93.2-25-25-58-38.7-93.2-38.7zm77.5 188.4c-3.3 9.3-19.1 17.7-26.7 18.8-12.6 1.9-22.4.9-47.5-9.9-39.7-17.2-65.7-57.2-67.7-59.8-2-2.6-16.2-21.5-16.2-41s10.2-29.1 13.9-33.1c3.6-4 7.9-5 10.6-5 2.6 0 5.3 0 7.6.1 2.4.1 5.7-.9 8.9 6.8 3.3 7.9 11.2 27.4 12.2 29.4s1.7 4.3.3 6.9c-7.6 15.2-15.7 14.6-11.6 21.6 15.3 26.3 30.6 35.4 53.9 47.1 4 2 6.3 1.7 8.6-1 2.3-2.6 9.9-11.6 12.5-15.5 2.6-4 5.3-3.3 8.9-2 3.6 1.3 23.1 10.9 27.1 12.9s6.6 3 7.6 4.6c.9 1.9.9 9.9-2.4 19.1zM400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM223.9 413.2c-26.6 0-52.7-6.7-75.8-19.3L64 416l22.5-82.2c-13.9-24-21.2-51.3-21.2-79.3C65.4 167.1 136.5 96 223.9 96c42.4 0 82.2 16.5 112.2 46.5 29.9 30 47.9 69.8 47.9 112.2 0 87.4-72.7 158.5-160.1 158.5z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </footer>
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
