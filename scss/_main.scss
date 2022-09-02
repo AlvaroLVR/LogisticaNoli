@@ -1,5 +1,74 @@
+.main{
+    .carousel{
+        background-image: url('../img/carrousel2.jfif');
+        background-position: 20% center;
+        height: 78vh;
+        position: relative;
+        .boton{
+            position: absolute;
+            width: 15vw;
+            left: 18%;
+            top: 3.5rem;
+        }
+    }
+    .contacto{
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        .main-contacto{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 3.5rem 1.5rem 3.5rem 0;
+            .contacto-svg{
+                height: 60px;
+                width: 60px;
+                margin-right: 2rem;
+            }
+        }
+    }
+    .flota{ 
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        .flota-card{
+            align-items: center;
+            .flota-svg{
+                height: 80px;
+                width: 80px;
+            }
+        }
+    }
+    .carga{
+        padding: 1rem 4rem;
+        .carga-card{
+            .carga-svg{
+                height: 80px;
+                width: 80px;
+            }
+        }
+    }
+    .formulario{
+        padding:4rem;
+        background-image: url('../img/Buy\ Used\ Shipping\ Container\ Units\ Near\ You\ Within\ Affordable\ Prices.jfif');     
+    }
+}
+
 @media  (max-width: 500px){
-    main{
+    
+    .main{
+        .carrousel{
+            .img-carrousel{
+                height: 30vh;
+                object-fit: fill;
+            }
+            position: relative;
+        }
+        .carrousel-boton{
+            position: absolute;
+            bottom: 10px;
+            left: 40%;
+        }
         .contacto{
             .main-contacto{
                 align-items: center;
@@ -25,12 +94,13 @@
             .carga-card{
                 align-items: center;
                 .carga-svg{
-                    height: 80px;
-                    width: 80px;
+                    height: 100px;
+                    width: 100px;
                 }
             }
         }
         .formulario{
+            padding:1.8rem;
             background-image: url('../img/Buy\ Used\ Shipping\ Container\ Units\ Near\ You\ Within\ Affordable\ Prices.jfif');
         }
     }

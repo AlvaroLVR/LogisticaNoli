@@ -1,75 +1,19 @@
 /* header main */
-.header-main{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    .header-info{
-        height: 5vh;
-        display: flex;
-        flex-direction: row;
-        border-bottom: 1px solid black ;
-        .info-left{
-            display: flex;
-            margin-left: 1rem ;
-        }
-        .info-rigth{
-            display: flex;
-            margin-right: 1rem ;
-        }
-    }
-    .header-nav{
-        background-color: white;
+.header{
+    justify-content: space-around;
+    #header-logo{
+        height: 60px;
+        width: 60px;
     }
 }
 
 @media (max-width: 500px) {
-    .header-main{
-        .header-info{
-            height: auto;
-            display: flex;
-            justify-content: center !important;
-            border-bottom: 1px solid black ;
-            .info-left{
-                display: none !important;
-            }
-            .info-rigth{
-                display:flex;
-                a{
-                    margin-left: 1rem;
-                    margin-right: 1rem;
-                }
-                .header-logo-info{
-                    margin: .3rem 0;
-                    height: 30px;
-                    width: 30px;
-                }
-            }
+    .header{
+        justify-content: space-between;
+        .navbar-brand{
+            height: 40px;
+            width: 40px;
         }
-        
-        .header-boton{
-            margin-right: 1rem;
-        }
-        .header-items{
-            text-align: center;
-        }
-        #logo-mobile{
-            height: 50px;
-            width: 50px;
-            margin-left:1.5rem ;
-        }
-
-    }
-    .carrousel{
-        .img-carrousel{
-            height: 30vh;
-            object-fit: fill;
-        }
-        position: relative;
-    }
-    .carrousel-boton{
-        position: absolute;
-        bottom: 10px;
-        left: 40%;
     }
     
 }
