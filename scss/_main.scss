@@ -58,16 +58,17 @@
     
     .main{
         .carrousel{
-            .img-carrousel{
-                height: 30vh;
-                object-fit: fill;
-            }
+            background-image: url('../img/carrousel2.jfif');
+            background-position: center;
+            object-fit: cover;
+            height: 78vh;
             position: relative;
-        }
-        .carrousel-boton{
-            position: absolute;
-            bottom: 10px;
-            left: 40%;
+            .boton{
+                position: absolute;
+                width: 15vw;
+                left: 30%;
+                top: 3.5rem;
+            }
         }
         .contacto{
             .main-contacto{
@@ -91,6 +92,7 @@
             }
         }
         .carga{
+            padding: 0 1rem;
             .carga-card{
                 align-items: center;
                 .carga-svg{
