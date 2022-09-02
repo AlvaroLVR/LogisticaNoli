@@ -1,9 +1,12 @@
 /* header main */
 .header{
-    justify-content: space-around;
-    #header-logo{
-        height: 60px;
-        width: 60px;
+    .navbar-brand{
+        justify-content: start;
+        height: 40px;
+        width: 40px;
+    }
+    .header-lista{
+        justify-content: end;
     }
 }
 

@@ -6738,14 +6738,18 @@ progress {
 }
 
 /* header main */
-.header {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.header .navbar-brand {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  height: 40px;
+  width: 40px;
 }
 
-.header #header-logo {
-  height: 60px;
-  width: 60px;
+.header .header-lista {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 @media (max-width: 500px) {
