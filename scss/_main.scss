@@ -2,6 +2,7 @@
     .carousel{
         background-image: url('../img/carrousel2.jfif');
         background-position: 20% center;
+        object-fit: fill;
         height: 78vh;
         position: relative;
         .boton{
@@ -33,6 +34,7 @@
         justify-content: center;
         .flota-card{
             align-items: center;
+            width: 30vw;
             .flota-svg{
                 height: 80px;
                 width: 80px;
@@ -40,11 +42,21 @@
         }
     }
     .carga{
-        padding: 1rem 4rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin: 4rem 0;
         .carga-card{
+            width: 20vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             .carga-svg{
                 height: 80px;
                 width: 80px;
+            }
+            p{
+                text-align: center;
             }
         }
     }
@@ -83,8 +95,12 @@
             }
         }
         .flota{
+            padding: 0 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             .flota-card{
-                align-items: center;
+                width: 60vw;
                 .flota-svg{
                     height: 90px ;
                     width: 90px ;
@@ -93,11 +109,13 @@
         }
         .carga{
             padding: 0 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             .carga-card{
-                align-items: center;
+                width: 60vw;
                 .carga-svg{
-                    height: 100px;
-                    width: 100px;
+                    
                 }
             }
         }

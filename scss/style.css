@@ -6767,6 +6767,8 @@ progress {
 .main .carousel {
   background-image: url("../img/carrousel2.jfif");
   background-position: 20% center;
+  -o-object-fit: fill;
+     object-fit: fill;
   height: 78vh;
   position: relative;
 }
@@ -6827,6 +6829,7 @@ progress {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 30vw;
 }
 
 .main .flota .flota-card .flota-svg {
@@ -6835,12 +6838,39 @@ progress {
 }
 
 .main .carga {
-  padding: 1rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 4rem 0;
+}
+
+.main .carga .carga-card {
+  width: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main .carga .carga-card .carga-svg {
   height: 80px;
   width: 80px;
+}
+
+.main .carga .carga-card p {
+  text-align: center;
 }
 
 .main .formulario {
@@ -6875,10 +6905,21 @@ progress {
     height: 40px;
     width: 40px;
   }
-  .main .flota .flota-card {
+  .main .flota {
+    padding: 0 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .main .flota .flota-card {
+    width: 60vw;
   }
   .main .flota .flota-card .flota-svg {
     height: 90px;
@@ -6886,15 +6927,19 @@ progress {
   }
   .main .carga {
     padding: 0 1rem;
-  }
-  .main .carga .carga-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  .main .carga .carga-card .carga-svg {
-    height: 100px;
-    width: 100px;
+  .main .carga .carga-card {
+    width: 60vw;
   }
   .main .formulario {
     padding: 1.8rem;
@@ -7023,10 +7068,7 @@ progress {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 2rem 0;
-  }
-  .footer .footer-navegacion .footer-redes h3, .footer .footer-navegacion .footer-redes .h3 {
-    padding-left: 3rem;
+    margin: 0 auto;
   }
   .footer .footer-navegacion .footer-redes .footer-lista-redes {
     display: -webkit-box;
@@ -7041,7 +7083,7 @@ progress {
         justify-content: space-around;
   }
   .footer .footer-navegacion .footer-redes .footer-lista-redes a {
-    margin: 1.5rem 0 1.5rem 3rem;
+    margin: 1rem 0;
   }
   .footer .footer-navegacion .footer-redes .footer-lista-redes a .footer-logo-info {
     height: 30px;
