@@ -6766,9 +6766,9 @@ progress {
 
 .main .carousel {
   background-image: url("../img/carrousel2.jfif");
-  background-position: 20% center;
-  -o-object-fit: fill;
-     object-fit: fill;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   height: 78vh;
   position: relative;
 }
