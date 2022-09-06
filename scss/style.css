@@ -6823,13 +6823,14 @@ progress {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #ffc107;
 }
 
 .main .flota .flota-card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 30vw;
+  width: 27vw;
 }
 
 .main .flota .flota-card .flota-svg {
@@ -6902,7 +6903,8 @@ progress {
             align-items: center;
   }
   .main .contacto .main-contacto .contacto-texto {
-    width: 70vw;
+    margin: 0 auto;
+    width: 60vw;
   }
   .main .contacto .main-contacto .contacto-svg {
     height: 40px;
@@ -6922,7 +6924,7 @@ progress {
             align-items: center;
   }
   .main .flota .flota-card {
-    width: 60vw;
+    width: 70vw;
   }
   .main .flota .flota-card .flota-svg {
     height: 90px;
